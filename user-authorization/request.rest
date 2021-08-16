@@ -1,0 +1,30 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoicHJhZGVlcG1zdXJlc2giLCJpYXQiOjE2MjkwODAzNDgsImV4cCI6MTYyOTA4MDM2OH0.5m8KeSVEaRBeSKztab6ym48d9DiL8cgtgtQ77K84GRA
+####
+
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "username": "pradeepmsuresh",
+    "password" : "password"
+}
+
+###
+
+POST http://localhost:3000/user/login
+Content-Type: application/json
+
+{
+    "username": "pradeepmsuresh",
+    "password" : "password"
+}
+
+### 
+
+POST http://localhost:3000/token
+Content-Type: application/json
+
+{
+    "token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoicHJhZGVlcG1zdXJlc2giLCJpYXQiOjE2MjkwODAzNDh9.4aqiax2ENXi6QcKFiTGbxUQGRr-NPOJ-y2TLPHSmXlY"
+}
